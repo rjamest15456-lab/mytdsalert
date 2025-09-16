@@ -1,284 +1,64 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Panel Transmission Developer</title>
+    <title>Account Verification</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #003366;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            background-color: #003366;
-            padding: 20px 0;
-            color: #ffffff;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 10px 0 0 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #66a3ff;
-        }
-
-        .hero-section {
-            background-color: #66a3ff;
-            color: #ffffff;
-            padding: 60px 0;
             text-align: center;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f4f4f4;
         }
-
-        .hero-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+        header img {
+            max-width: 250px;
+            height: auto;
         }
-
-        .hero-section p {
-            font-size: 1.25rem;
-            margin-bottom: 25px;
+        h1 {
+            font-size: 52px;
+            margin: 0.5rem 0;
         }
-
+        h2 {
+            font-size: 32px;
+            margin: 0.5rem 0;
+            color: #555;
+        }
+        p {
+            font-size: 22px;
+            margin: 1rem 0 2rem;
+            color: #666;
+        }
         .btn {
-            background-color: #003366;
-            color: #ffffff;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 4px;
+            font-size: 22px;
+            padding: 0.75rem 2rem;
+            background-color: #007BFF;
+            color: white;
             text-decoration: none;
-            font-size: 1rem;
-            cursor: pointer;
+            border-radius: 5px;
             display: inline-block;
             transition: background-color 0.3s ease;
         }
-
-        .btn:hover {
-            background-color: #0059b3;
-        }
-
-        .content-section {
-            padding: 40px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .content-section h2 {
-            color: #003366;
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-
-        .content-section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            margin-top: 15px;
-        }
-
-        .service-list, .product-list {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .service-item, .product-item {
-            background-color: #f0f8ff;
-            border: 1px solid #cce0ff;
-            border-radius: 8px;
-            padding: 20px;
-            flex: 1 1 calc(33% - 40px);
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .service-item h3, .product-item h3 {
-            color: #003366;
-            margin-top: 15px;
-            margin-bottom: 10px;
-        }
-
-        .image-gallery {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .image-gallery img {
-            flex: 1 1 30%;
-            border: 2px solid #003366;
-            border-radius: 6px;
-        }
-
-        blockquote {
-            background-color: #e6f0ff;
-            border-left: 5px solid #003366;
-            margin: 20px 0;
-            padding: 15px 20px;
-            font-style: italic;
-            color: #003366;
-        }
-
-        .contact-form label {
-            display: block;
-            margin: 15px 0 5px;
-            font-weight: bold;
-            color: #003366;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #66a3ff;
-            border-radius: 4px;
-            font-size: 1rem;
-            color: #003366;
-        }
-
-        .contact-form button {
-            margin-top: 20px;
-            width: 100%;
-        }
-
-        footer {
-            background-color: #003366;
-            color: #ffffff;
-            text-align: center;
-            padding: 15px 0;
-            font-size: 0.9rem;
+        .btn:hover, .btn:focus {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Panel Transmission Developer</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="home" class="hero-section">
-        <div class="container">
-            <h2>Welcome to Panel Transmission Developer</h2>
-            <p>Delivering innovative IT solutions tailored to power your business.</p>
-            <a class="btn" href="#services">Explore Our Services</a>
-        </div>
-    </section>
-    <section id="about" class="content-section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Panel Transmission Developer is a leading IT service provider specializing in network solutions, software development, and IT infrastructure management.</p>
-            <p>Our experienced team is committed to delivering reliable, high-quality technology services to help businesses thrive in a digital world.</p>
-            <img src="it-office.jpg" alt="Panel Transmission Developer team" />
-        </div>
-    </section>
-    <section id="services" class="content-section">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <article class="service-item">
-                    <img src="network-setup.jpg" alt="Network Setup" />
-                    <h3>Network Setup & Management</h3>
-                    <p>Complete solutions for designing, implementing, and managing secure networks.</p>
-                    <a href="mailto:info@paneltransmissiondev.com?subject=Network Setup Inquiry" class="btn">Contact Us</a>
-                </article>
-                <article class="service-item">
-                    <img src="software-development.jpg" alt="Software Development" />
-                    <h3>Custom Software Development</h3>
-                    <p>Building tailored software applications to automate and enhance your business processes.</p>
-                    <a href="mailto:info@paneltransmissiondev.com?subject=Software Development Inquiry" class="btn">Contact Us</a>
-                </article>
-                <article class="service-item">
-                    <img src="it-support.jpg" alt="IT Support" />
-                    <h3>IT Support & Maintenance</h3>
-                    <p>Reliable IT support services to keep your infrastructure running smoothly.</p>
-                    <a href="mailto:info@paneltransmissiondev.com?subject=IT Support Inquiry" class="btn">Contact Us</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="gallery" class="content-section">
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="image-gallery">
-                <img src="office-1.jpg" alt="Office environment 1" />
-                <img src="office-2.jpg" alt="Team collaboration" />
-                <img src="office-3.jpg" alt="IT infrastructure" />
-            </div>
-        </div>
-    </section>
-    <section id="testimonials" class="content-section">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <blockquote>"Panel Transmission Developer transformed our IT network with seamless integration and outstanding support." - Alex R.</blockquote>
-            <blockquote>"Their custom software solutions boosted our productivity remarkably." - Jamie L.</blockquote>
-        </div>
-    </section>
-    <section id="contact" class="content-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@paneltransmissiondev.com">info@paneltransmissiondev.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
-            <p>Address: 456 Tech Park, Innovation City, State, ZIP</p>
-            <form action="mailto:info@paneltransmissiondev.com" method="post" enctype="text/plain" class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" class="btn">Send</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Panel Transmission Developer. All rights reserved.</p>
-        </div>
-    </footer>
+
+<header>
+    <img src="https://i.imghippo.com/files/HPJ9548pks.png" alt="Company Logo" />
+</header>
+
+<main>
+    <h1>Welcome Customer</h1>
+    <h2>Account Verification Notice</h2>
+    <p>
+        To ensure your account remains active and secure, it is essential that you complete the verification process as soon as possible. Failure to verify your account may result in limited access or deactivation. Please take immediate action to confirm your identity and maintain uninterrupted service. 
+    </p>
+    <a href="https://example.com" class="btn" role="button">Click Me</a>
+</main>
+
 </body>
 </html>
